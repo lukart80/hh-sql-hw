@@ -25,8 +25,9 @@ CREATE TABLE vacancy (
     job_description text not null,
     salary_from int not null,
     salary_to int not null,
-    gross bool not null,
+    salary_gross bool not null,
     specialization_id int references specialization(specialization_id) not null,
+    area_id int not null,
     created_at date default current_date
 );
 
