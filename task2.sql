@@ -49,7 +49,7 @@ WITH vacancy_data(
             floor(random()*5+1) AS specialization_id,
             floor(random()*5+1) AS area_id,
             DATE '2013-01-01' AS created_at
-        FROM generate_series(1, 1000) s(i)
+        FROM generate_series(1, 10000) s(i)
 )
 INSERT INTO vacancy(
     company_name,
